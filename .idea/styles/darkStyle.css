@@ -1,0 +1,11 @@
+.carouselImage{
+    position: relative;
+    float: center;
+    height: 400px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
