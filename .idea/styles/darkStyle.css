@@ -1,11 +1,36 @@
 .carouselImage{
     position: relative;
     float: center;
-    height: 400px;
+    height: 600px;
 }
 
-h1{
+nav{
+    background-color: #000b20;
+}
+
+h1,p,img,a,h2,h3,h4,h5,label{
     text-align: center;
     color: white;
+    font-family: "Javanese Text";
 }
 
+.background{
+    background-color:#343a40;
+}
+
+
+.carouselText{
+    color:whitesmoke;
+    background-color: black;
+    opacity:0.7;
+}
+
+/*.off{*/
+    /*background-color: black;*/
+    /*color:white;*/
+/*}*/
+
+/*.on{*/
+    /*background-color: white;*/
+    /*color:black;*/
+/*}*/

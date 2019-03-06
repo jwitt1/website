@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="../styles/normalStyle.css" id="styleSheet">
     <title>James Witt's page</title>
 </head>
-<body class="bg-dark bd-dark">
-<nav id="navBar" class="navbar navbar-expand-lg navbar-light bg-light">
+<body class="background">
+<nav id="navBar" class="navbar navbar-expand-lg navbar-light ">
     <a class="navbar-brand" href="#">
-        <img src="../images/jw.png" width="40" height="40" alt="">
-        James's HCI page</a>
+        <img id="logo" src="../images/jw.png" width="40" height="40" alt="">
+        </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,10 +35,11 @@
                 <a class="nav-link" href="projects.html">Projects<span class="sr-only">(current)</span></a>
             </li>
         </ul>
-        <label> Darkmode: <input type="checkbox" data-toggle="toggle" id="styleToggle" data-on="Enabled" data-off="Disabled"></label>
+        <input type="checkbox" data-toggle="toggle" id="styleToggle" data-onstyle="info" data-offstyle="off"
+               data-on="Darkmode<br>Enabled" data-off="Darkmode<br>Disabled">
     </div>
-
 </nav>
+<br>
 <div style="width: 80%; margin: auto">
     <h1 id="test">Projects</h1>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" align="center">
@@ -49,17 +50,25 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100 carouselImage" src="../images/wctiLogo.jpg" alt="First slide">
+                <img id="wcti" class="d-block w-100 carouselImage" src="../images/wctiPage.JPG" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 style="color: black">WCTI Redesign</h5>
+                    <h5 class="carouselText">WCTI Redesign</h5>
                     <p></p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100 carouselImage" src="../images/dataVisual.png" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carouselText">Data visualization</h5>
+                    <p></p>
+                </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100 carouselImage" src="../images/dataVisual.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carouselText">Data visualization</h5>
+                    <p></p>
+                </div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -72,17 +81,29 @@
         </a>
     </div>
 </div>
+<br>
+<h1>About Me</h1>
+<p> </p>
 <script>
-    $(function() {
-        $('#styleToggle').change(function() {
+    $('#styleToggle').change(function () {
 
-            if($(this).prop('checked')){
-                $('#styleSheet').attr("href", "../styles/darkStyle.css");
-            }
-            else{
-                $('#styleSheet').attr("href", "../styles/normalStyle.css");
-            }
-        })
+        if ($(this).prop('checked')) {
+            $('#styleSheet').attr("href", "../styles/darkStyle.css");
+            $('#navBar').attr("class", "navbar navbar-expand-lg navbar-dark")
+        } else {
+            $('#styleSheet').attr("href", "../styles/normalStyle.css");
+            $('#navBar').attr("class", "navbar navbar-expand-lg navbar-light")
+        }
+    })
+
+    //goes to projects page, carousel incorporation
+    $("img").click(function () {
+        if ($(this).attr('id') == "logo") {
+            var href = 'index.html'
+        } else {
+            var href = 'projects.html#' + $(this).attr('id');
+        }
+        window.location.href = href;
     })
 </script>
 </body>
