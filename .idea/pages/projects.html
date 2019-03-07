@@ -1,10 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" href="../styles/normalStyle.css" id="styleSheet">
+    <title>James Witt's page</title>
 </head>
-<body>
-
+<body class="background">
+<nav id="navBar" class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="#">
+        <img id="logo" src="../images/jw.png" width="40" height="40" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <input type="checkbox" data-toggle="toggle" id="styleToggle" data-onstyle="info" data-offstyle="off"
+               data-on="Darkmode<br>Enabled" data-off="Darkmode<br>Disabled">
+    </div>
+</nav>
+<br>
+<div style="width: 80%; margin: auto">
+    <h1 id="hcti">HCTI Redesign</h1>
+    <h1 id="chatbot">Chatbot</h1>
+    <p>Me and 3 other people were given a week to create a chatbot whose purpose was to talk a controversial topic. We chose to talk about vaccinations because we all had strong opinions on
+    the responsibilities a parent has in vaccinating their children. <br>You may interact with the chatbot below</p>
+    <iframe src="https://fxo.io/m/gqbr2q94" style="border: 3px solid #f9f9fb; width: 100%; height: 400px;"
+            allowfullscreen></iframe>
+    <a href="https://medium.com/@jwitt1234585/design-for-tension-78b8f1484178">Click here for my blog post on this
+        project</a>
+    <h1 id="laugh challenge">Data Visualization</h1>
+    <a href="https://vega.github.io/editor/#/url/vega-lite/N4KABGBEAkDODGALApgWwIaQFxUQFzwAdYsB6UgN2QHN0A6agSz0QFcAjOxge1IRQyUa6ALQAbZskoBmOgCtY3AHaQANOCgATZAgBOjQnh4qckAIJgE6Asl2Ex3PJcTcA7oyXUwL3bGSE3WzB0JU0wVEYxHTBCINoxByVYMAAzbl0wCnR9blZk+GzYOjUNSBRGanxsMAAmAAY69QhId00WaoBGAFYGpqhCdE1ND2pqrr7IdnR4AGtqXVzQ6sh55ABPEubNa0wcUAhmrLFWHWqAbQ0DsH2rg8gAOVZUdiDuFLAAUWyWAEdWdBmpxw0gAbHUAJx9W5QMxUXToajIMAAWQRSmYrG0nTodQ6UNukCMeCiywAwugJGldOjMJcDgBffEQYAPJ4vDJvT7fRB-AFAsAAFlUMLhCKRqOo6LwmOQYzoXXGUCJJNMACFWLoMJBGXTmbq7o9nq93l9dL9-oDYNUAOwdGpMu6w2xilFojFYnB1OjWh3NZWy0z3ZBZbaQfU66E3aGso0ck3c3mW6o1Drg8b65pO+GI12S90BsAdeXp6F+5gqmFidCwGa06ER25RgmG9lgTmm818q04Go1Eul8yinMSqUy7Egn0ZpXlguQAAS6Fc6EYjDD9YdTauMdb7YTFv54JBvpFzuHbulHrAXrTx8JM+WyOUeBCdduDaum4NbONXLNPP33aFl0R5ToOp7iueY49nQAqTqW07ErOAAKJxmtwYAAEqMPA3Brm+G6gS2P4dv+XbVNI-bRlmLojvm1QCvKeKgf6ZKIJEsrhgR8HbsRe5kcCTHcdRZ55heBayN0t4saYAAi3AROiBRKJh-gcBI8B4Vc74HJ+zREXGv6dkmODggAHLewkQaJUG1HQFFSfear6EYsCIGAABqjC6EwykAJKwFWoRWpx+q6VA+ltvGf6JvyILSBZQ5WaOl4MdaQrMY5UC+aEyg6Iwr5aVxA4Rbu0UAZ0toJeBubJQWRZ1PFGWIcsADq1ZsZ4eDKJpDJFdGJVRUZ-KNUJiU1XROBdHQNRwQO0lQAAyrkLC2MpXywE4SHTIwKTYZhjB+D1EDaXq3EDYZpHGYWgkDpZ41ifRMHmU1FbmN5yBKEYSgFb1oWEd+BkkTFgEdM9o3VbRD04KlI1zZlkBIWxEiEIQHinCFkb-bGkUXcDYyzVRY2QzZRbWpRBLzZA5LfaGGONljO6DZd-I1GDt1E5BKV0CC5NbpTW2EP8YBBq4YAAOKsGjP3HX1zYAzjQPlTgHSNKBd3E1zoIOc1phmCklQhAdz4qHTH4M7xZX8WApk3YTEOc3Vdn2i9s4APK6DQ3Wmzp5uA3xV22wS6sO49vN3JTS2sCwON6-oBRHWAJ3XDxfuWwHQontmSUTYK8pHghr1IbYrDahuKcK-7-IdD6mc0SH0MwXiBezgAYowcirknYXl6VQ2AQKqvg1n902QxpnO9xlMAFLoAMJvrn9Z3y73zOASCIFD3X1mXjUdDghPcM61ArszFWLhat7p3FcvTN49DB928PGsFrvPPa69yLIAAHthuGX9cvsK5pwPFVJ+9dc4CgfhTeGABpNY3k1gAC8NohATl3QBK8761EHuze229HY23frOAAKh9JQOg-AcQXpjJe2NMFK0LOlTeIlaqPTJkQ5YxDlC0DQbLLc51FZW1ho-LerDoK9g4brXQtYkjVl4Yva+dDb4MOrqA0ROcGJdGEdAo+kBI7R05CtMAbcO5gH8oFTQwVqGNh7soq2wFhRgTAfg7ErNHGUwAKrPkQKXBR-Ub64xUWolhGjpqSKgGLZA6QmDS0Tnwr8SjAlCLZiIkJUNbISJdssDxdAFp0A8l5HyZiAohEsfImhijGZJIDikoOHMXHK2LOEyAvltguHKfTWhVTBFXWkATOpeCxGFmmmHMsuiWprHkiMDpH5bHVOGo44ODSIHxWbssXy8IVBdzmT0quiz6lDIYhnO8uiFrwPyr4ip-jEm7MAjNYJ2d0maKYYfV6GE8iwAuf-buAjK4gygVuJZhynrNOIegDuMwjaoO+RguxV1IRqwOaEkEALw7w30YgVwOgnDZWGCEfamhEQzJ9l0i2fdOgPJHjvGCzSzCeElgkWJ6DSWp3JcCSlz9HqwWaVtb6F9rFmxZUAtltRA6AqRek3eNQN6vNnDAkIsA5EwqFfQ+x2jxWDNCV0MVaLdH3HSCtakrp9AvmKRYqx+E-FyxuX8iliLNXpNGWs0wpJED6A2hgZI5jSnEqvtc7ptrlYvNSY80eedmmuo8Ey+JekAm3M6Ai5hoauZvyyYGZAosABayAKQ+uVZUslq9qiJtwc44F1oS3Rkpu5EI-xpS+oASquFsUOXgIYtIWpfN4YS2sGgXNDaWS-OAXc-ZDqw01xOa9MWHtkDwFlNsodIqm5OPUU8sJzqoBIW4BYy5nSC2sqLcrVtyyjkRsQAibgyQzC6CQAYZAVZqDoQ9kwL2AqSX7uFYexhx7gVdErTo16vlnxiA2Pm-1hasE6szBKkmdBO26tep5byHgzWlOSM+4wA7YXzMAuqx0MHLxemtPBsZr0RZgCnrYPwoG31+utQG4d5Ef05y9OPZp+q-yrTAOSSk6QaRYabThpj9qy1arw6R2cGKuPIkYJoEQZhiQhCMPAAlRKwP0Ygww4NAzRNrvBP0rtpzlpuQWqU9wSBUNBQEx+1VV16jMb0-+wzr0MXiyich9AwRQhgCMa50zoRzNuW9VZ9T-C42BsLA5sNUGN0PANZi7FMc8h4HhBIaNVqws2sY5NKLl4poduaa53F+VlKuzndC2jjabPNpBjgkNVKCyaKdZOyT275LKEs2U0LCSGNLty41vezSZNyeK-irChKqGWquRpg9WDxO1zSWG6Q82WvLC3WaVg8RrPgdm0EkTq7x20oQB9T5HXgthAw6+qbe6dufsg-1sYtLEG2CmO3Cr13ZmLq-faBbyaBtv1i6N3dgrqtCaPftxbKbmkwK8owKYRgwCXfnh999t3bN7Ih39x6Mqq3w1RGaDwjA-iTcKhlnrmmraoug2OrmzXq0fWQIgk4VZtszbuwwlbQLQkrcpqqbdjAKBfMq4O8L2Xaijt06Pdx8NiEakBBsZloP43g6TQ10OzSa1KDrawRHNBMPddjVlpdVPftq8aZVNNUAZOwEUBqVc3ydkRZ+yuyHA3FSrdMD21AwOdKO7F8urn6SixmWl7o12bFcKK7RzV+iD2G4ovY9hbICJ-is8y71r9MWXdY4bnT+G60nDEMYKgdIafye7cp3H3ON5Ldxc40a4b8nFOfT2uNtTwu-d9dN5yyadlQ+F1zSXKPbP0eARI938Bu9IERra-CTQf9hfYeV5FzHZvbLSCz5TFqiWkM+SFyjuj6eKe9JN9ntfDF97sYzdxikyB5-8YN+FUXIrOcEYG6ZHn8MzDJdS-v0n02j8K87Mq9ZAccAM3YUh3gjEcJqwnBOR3ZPZkd-8bsR8Y8VdS0DtLxg9tNnNZxd9Cd0sADy92crYcD8MacBtp9a9SRL1nx9p45H9O9M8q8x5mkPEZh4Q0Yy9DcM8sFT9A8w0BQ89dEaCHBng-9foiCeDj8MdVce9c4DMENZwC8cYjEYE7cxBOsLVkDPtn9mCJ8T06Bl1KZSQ1hCBdA8gfdD9iDR9kwWDvQeVtpdp4B5NPpsh4BlNVMSdJCUDACSCA57CwDcDslEEXhIUUEkCfCQdo8wcwBX8KDkwYJP9dFfIEgPBuADpuCn8jdmDV95D20I0PoUsKQURZMm9ApPC29vCZYydpCgDZCMDXd1da9t8NouNRslBXDnwb1KjZN28D8qsYjl9+C39Ho+xmkPh4B-h59dAsimD7s8i21uZCtjMcZeV0B+UBifk9C+D7DFCJNlgPhNDTMxAQxS9GCvtdjFjDD9jYtWi8AuMAANRgRBEIUYC4nYvbOQpY24j3GERBdIHQEQckWIMABaPAfJTyJQOdT6LwuYy4r4xonPYZS-WvDjaOckBYCQb6eEz4q2LPAQvLdjeLHGBaI4KYXQTQAdeYoJAwoZXed3SmUhL+ORYfPw2w9la44FUyX4ymExRgXXF9SImoqQ7I3gxE+rfI+UZpDCdYGYOQEIaIKo3EnIubKvIsAUIIpQ5Ya9F45QQg3wmwtAlfb4wwsgg40wLacI42FU8U-E+w4QqdGdJQCxMEnNW0mQkGdU6UtE6-BcVAYgNiD2D0+okGLU6nSXPLGlWvVzSJaJfKTrQU-XRfQTZfAk0YxpAUcfP4h4a-AATXSBmBDP8IaMlKWPDNi1JCKNSy5A2jAC2ngB2lbwOmqLiVqLFM9LsK5NCXYTRJJM5DMGOySGME62LI5JNKRLXyLD6R5TIVgDWFOMNgNOiNQNiJGISN717MnnhhnjniTKux0N9wRPtLpNCWdyZOXCXC2RjQ7NDLtVNOBQrJzPUP0E0PO20IZDpAAF0NAGxIAMBpFlgAgPA8BNgoAPocJhhPBqgmxIAv4YLIBdp70qTAw8Skx3EzDZxeQW9nwjAqAfdIANg9hELGBkKdTRiMLYhlhsKiRrABd518RCRuBt0jBCAEKkKxAUK1lKLZx0goKKRtRfyQB6QgA/view">
+        Click this you big dumb idiot
+    </a>
+    <a href="https://medium.com/@jwitt1234585/design-for-understanding-2d1187130054">Click here for my blog post on this project</a>
+</div>
+<script>
+    $('#styleToggle').change(function () {
+        if ($(this).prop('checked')) {
+            $('#styleSheet').attr("href", "../styles/darkStyle.css");
+            $('#navBar').attr("class", "navbar navbar-expand-lg navbar-dark")
+        } else {
+            $('#styleSheet').attr("href", "../styles/normalStyle.css");
+            $('#navBar').attr("class", "navbar navbar-expand-lg navbar-light")
+        }
+    })
+</script>
 </body>
 </html>

@@ -11,8 +11,11 @@ nav{
     background-color: #000b20;
 }
 
-h1,p,img,a,h2,h3,h4,h5,label{
+h1,img,a,h2,h3,h4,h5,label{
     text-align: center;
+    font-family: "Javanese Text";
+}
+p{
     font-family: "Javanese Text";
 }
 
