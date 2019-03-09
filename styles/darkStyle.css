@@ -25,20 +25,25 @@ div.right{
 }
 b{
     font-family: "Javanese Text";
-    color: darkgray;
+    color: #565759;
 }
 h1,img,h2,h3,h4,h5,label{
     text-align: center;
     color: white;
     font-family: "Javanese Text";
 }
-p,a{
+p{
     color: white;
     font-family: "Javanese Text";
+}
+a{
+    color: #355893;
+    font-family: "Javanese Text"
 }
 
 .background{
     background-color:#343a40;
+    font-family: "Javanese Text"
 }
 
 
