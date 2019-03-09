@@ -19,6 +19,22 @@ p{
     font-family: "Javanese Text";
 }
 
+a.headerText{
+    font-size: 26px;
+}
+
+div.left{
+    float: left;
+    text-align: center;
+    margin-left: 5%;
+}
+
+div.right{
+    float: right;
+    text-align: center;
+    margin-right: 5%
+}
+
 .background{
     background-color: white;
 }
@@ -38,4 +54,10 @@ p{
 .on{
     background-color: white;
     color:black;
+}
+
+.icon{
+    width: 40px;
+    height:40px;
+    margin: 5px;
 }

@@ -7,7 +7,26 @@
 nav{
     background-color: #000b20;
 }
+nav.footer{
+    background-color: black;
+}
 
+a.headerText{
+    font-size: 26px;
+}
+div.left{
+    float: left;
+    text-align: center;
+}
+
+div.right{
+    float: right;
+    text-align: center;
+}
+b{
+    font-family: "Javanese Text";
+    color: darkgray;
+}
 h1,img,h2,h3,h4,h5,label{
     text-align: center;
     color: white;
@@ -29,12 +48,8 @@ p,a{
     opacity:0.7;
 }
 
-/*.off{*/
-    /*background-color: black;*/
-    /*color:white;*/
-/*}*/
-
-/*.on{*/
-    /*background-color: white;*/
-    /*color:black;*/
-/*}*/
+.icon{
+    width: 40px;
+    height:40px;
+    margin: 5px;
+}
