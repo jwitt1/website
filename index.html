@@ -58,14 +58,14 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img id="dataVisual" class="d-block w-100 carouselImage" style="background-color: black"src="images/dataVisual.png" alt="Second slide">
+                <img id="data" class="d-block w-100 carouselImage" style="background-color: black"src="images/dataVisual.png" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="carouselText">Data visualization</h5>
                     <p></p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 carouselImage" src="images/chatbot.png" alt="Third slide">
+                <img id="chatBot" class="d-block w-100 carouselImage" src="images/chatbot.png" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="carouselText">Chatbot</h5>
                     <p></p>
@@ -143,7 +143,7 @@
         if ($(this).attr('id') == "logo") {
             var href = 'index.html'
         } else {
-            var href = 'projects.html#' + $(this).attr('id');
+            var href = 'projects.html?collapse' + $(this).attr('id');
         }
         window.location.href = href;
     })
