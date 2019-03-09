@@ -21,11 +21,13 @@ div.wrapper{
 div.left{
     float: left;
     text-align: center;
+    margin-left: 5%;
 }
 
 div.right{
     float: right;
     text-align: center;
+    margin-right: 5%
 }
 b{
     font-family: "Javanese Text";

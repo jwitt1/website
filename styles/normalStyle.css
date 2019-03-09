@@ -15,14 +15,16 @@ h1,img,a,h2,h3,h4,h5,label{
     text-align: center;
     font-family: "Javanese Text";
 }
-p{
+p,b{
     font-family: "Javanese Text";
 }
 
 a.headerText{
     font-size: 26px;
 }
-
+div.wrapper{
+    overflow: hidden;
+}
 div.left{
     float: left;
     text-align: center;
