@@ -1,17 +1,14 @@
-.carouselImage{
-    position: relative;
-    float: center;
-    height: 600px;
-}
 
 nav{
     background-color: #17a2b8;
 }
-.carouselBackground{
-    background-color: #000b20;
-}
 
-h1,img,a,h2,h3,h4,h5,label{
+h1{
+    font-size: 60px;
+    font-family: "Javanese Text";
+    text-align: left;
+}
+img,a,h2,h3,h4,h5,label{
     text-align: center;
     font-family: "Javanese Text";
 }
@@ -22,6 +19,7 @@ p,b{
 a.headerText{
     font-size: 26px;
 }
+
 div.wrapper{
     overflow: hidden;
 }
@@ -46,6 +44,7 @@ div.right{
     background-color: whitesmoke;
     opacity:0.7;
     font-size: 50px;
+    text-align: center;
 }
 
 .carouselDescription{
@@ -53,6 +52,15 @@ div.right{
     background-color: whitesmoke;
     opacity:0.7;
     font-size: 30px;
+}
+
+.carouselBackground{
+    background-color: #000b20;
+}
+
+.carouselImage{
+    position: relative;
+    height: 600px;
 }
 
 .off{
