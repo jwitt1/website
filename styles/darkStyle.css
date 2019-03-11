@@ -11,6 +11,10 @@ a.headerText{
     font-size: 26px;
 }
 
+button.headerText{
+    font-size: 40px;
+}
+
 div.wrapper{
     overflow: hidden;
 }

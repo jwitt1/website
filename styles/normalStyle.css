@@ -73,7 +73,9 @@ div.right{
     background-color: white;
     color:black;
 }
-
+button.headerText{
+    font-size: 40px;
+}
 .icon{
     width: 40px;
     height:40px;
